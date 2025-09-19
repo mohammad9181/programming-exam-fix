@@ -53,7 +53,7 @@ public class Employee{
      * Output the payment record and resets unpaid hours
      */
     public void paySalary(){
-        int pay = calculatePay();
+        double pay = calculatePay();
         System.out.println(fullname + " has recieved a wire transfer of " + pay);
         unpaidHours = 0.0;
     }
