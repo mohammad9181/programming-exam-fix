@@ -31,20 +31,55 @@ public class Employee{
      */
     public boolean canDrive(){
         int age = calculateAge(2025);
-        // to be completed
+        int timeLeft = 16 - age;
+        if(age > 16) {
+            return true;
+        }
+        else {
+            system.print("You are too young, wait another " + timeLeft + " to drive");
+            return false;
+        }
     }
 
     /*
      * Returns the net pay for the outstanding unpaid hours
      */
     private double calculatePay(){
-        // to be completed
+        return (unpaidHours*hourlyWage*o,7);
     }
 
     /*
      * Output the payment record and resets unpaid hours
      */
     public void paySalary(){
-        // to be completed
+        int pay = calculatePay();
+        system.print(fullname + " has recieved a wire transfer of " + pay);
+        unpaidHours = 0.0;
+    }
+    
+    //setter method
+    public boolean canWork()
+    {
+        int age = calculateAge(2025);
+        if(age > 14) {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    
+    //getter method
+    public void workCheck() 
+    {
+        boolean ableToWork = canWork();
+        if(ableToWork)
+        {
+            system.print("you can work");
+        }
+        else
+        {
+            system.print("you can't work");
+        }
     }
 }
