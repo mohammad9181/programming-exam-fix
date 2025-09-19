@@ -45,7 +45,8 @@ public class Employee{
      * Returns the net pay for the outstanding unpaid hours
      */
     private double calculatePay(){
-        return (unpaidHours*hourlyWage*o,7);
+        double tax = 0.7;
+        return (unpaidHours*hourlyWage*tax);
     }
 
     /*
