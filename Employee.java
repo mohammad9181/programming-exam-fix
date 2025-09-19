@@ -36,7 +36,7 @@ public class Employee{
             return true;
         }
         else {
-            system.print("You are too young, wait another " + timeLeft + " to drive");
+            System.out.println("You are too young, wait another " + timeLeft + " to drive");
             return false;
         }
     }
@@ -54,7 +54,7 @@ public class Employee{
      */
     public void paySalary(){
         int pay = calculatePay();
-        system.print(fullname + " has recieved a wire transfer of " + pay);
+        System.out.println(fullname + " has recieved a wire transfer of " + pay);
         unpaidHours = 0.0;
     }
     
@@ -76,11 +76,11 @@ public class Employee{
         boolean ableToWork = canWork();
         if(ableToWork)
         {
-            system.print("you can work");
+            System.out.println("you can work");
         }
         else
         {
-            system.print("you can't work");
+            System.out.println("you can't work");
         }
     }
 }
